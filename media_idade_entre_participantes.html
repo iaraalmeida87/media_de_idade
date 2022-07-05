@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+    <h3>Média entre idades entre grupo de participantes</h3>
+        <script>
+            function pulaLinha() {
+                document.write("<br>");
+            }
+            function mostra(frase) {
+                document.write(frase);
+                pulaLinha();
+            }
+            var numeroPessoas = parseInt(prompt("Quantas pessoas participarão?"));
+            var numero = 1;
+            var totalIdade = 0;
+
+            while(numero <= numeroPessoas) {
+                var idade = parseInt(prompt("Informe a idade:"));
+                totalIdade = totalIdade + idade;
+                numero++;
+            }
+            var mediaIdade = totalIdade / numeroPessoas;
+            mostra("A média das idades dos participantes é de " + mediaIdade);
+            mostra("FIM!");
+        </script>
