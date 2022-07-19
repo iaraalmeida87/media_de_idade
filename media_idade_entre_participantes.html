@@ -8,16 +8,16 @@
                 document.write(frase);
                 pulaLinha();
             }
-            var numeroPessoas = parseInt(prompt("Quantas pessoas participarão?"));
-            var numero = 1;
-            var totalIdade = 0;
+            let numeroPessoas = parseInt(prompt("Quantas pessoas participarão?"));
+            let numero = 1;
+            let totalIdade = 0;
 
             while(numero <= numeroPessoas) {
-                var idade = parseInt(prompt("Informe a idade:"));
+                let idade = parseInt(prompt("Informe a idade:"));
                 totalIdade = totalIdade + idade;
                 numero++;
             }
-            var mediaIdade = totalIdade / numeroPessoas;
+            const mediaIdade = Math.round(totalIdade / numeroPessoas);
             mostra("A média das idades dos participantes é de " + mediaIdade);
             mostra("FIM!");
         </script>
